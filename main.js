@@ -3,7 +3,48 @@
  ******************/
 
 
+const indexedChars = function(str) {
+  let result = '';
+  
+  for (let i = 0; i < str.length; i++){
+    result = result + i + str[i]
+  }
+  return result;
 
+}
+
+const repeatIt = function(a,b){
+  
+  let str = b
+  
+  for (let step = 0; step < a; step++) {
+  // Runs 5 times, with values of step 0 through 4.
+  console.log(str);
+}
+}
+
+repeatIt(4,'hi')
+
+
+
+function reverseString(str) {
+
+    let newString = "";
+ 
+
+    for (let i = str.length - 1; i >= 0; i--) { 
+        newString += str[i]; // or newString = newString + str[i];
+    }
+   
+    return newString; // "olleh"
+}
+ 
+reverseString('hello');
+
+
+
+
+indexedChars('healt')
 
 
 
